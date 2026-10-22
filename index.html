@@ -1,74 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freelance Marketplace</title>
-  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
-  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-  <link
-    href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap)"
-    rel="stylesheet"
-  >
+  <title>Upwork</title>
   <link rel="stylesheet" href="style.css">
+  <base target="_blank">
 </head>
+
 <body>
 
-  <header class="navbar">
-    <a href="#" class="logo">upwork</a>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">up<span>work</span></a>
 
+      <nav class="main-nav">
+        <a href="#">Hire Talent <span class="caret"></span></a>
+        <a href="#">Get Outcomes <span class="caret"></span></a>
+        <a href="#">Find Work <span class="caret"></span></a>
+        <a href="#">Why Upwork <span class="caret"></span></a>
+        <a href="#">Price <span class="caret"></span></a>
+        <a href="#">Enterprise</a>
+      </nav>
 
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#">Hire talent <span>⌄</span></a>
-      <a href="#">Get outcomes <span>⌄</span></a>
-      <a href="#">Find work <span>⌄</span></a>
-      <a href="#">Why Upwork <span>⌄</span></a>
-      <a href="#">Pricing</a>
-      <a href="#">Enterprise</a>
-    </nav>
-
-    <div class="nav-actions">
-      <a href="#" class="search" aria-label="Search"></a>
-      <a href="#" class="login">Log in</a>
-      <a href="#" class="signup">Sign up</a>
+      <div class="header-actions">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#5e6d55" stroke-width="2">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+          <input type="text" placeholder="Search for any skill">
+        </div>
+        <a href="#" class="btn btn-ghost">Log in</a>
+        <a href="#" class="btn btn-primary">Sign up</a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="business-banner">
-      <p>Hire the top 1% of talent on Business Plus.</p>
-
-      <a href="#">
-        Get started
-        <span class="arrow">›</span>
-      </a>
-    </section>
-
-    <section class="hero">
-        <img src="blob:https://chatgpt.com/43ff8933-5893-45e7-bd42-014aa03c8c0b" alt="">
-      <div class="overlay"></div>
-
-      <div class="hero-content">
-        <div class="switch">
-          <button class="active">Hire</button>
-          <button>Work</button>
-        </div>
-
-        <h1>
-          Work at the speed of<br>
-          your ambition
-        </h1>
-
-        <p>
-          Hire experts who use AI to amplify their talent, turning<br>
-          complex work into high impact business outcomes
-        </p>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title"> Hire the top 1% talent on Business plus. <em>Get started.</em></h1>
+      <!-- ------------video--------- -->
+      <div class="videocontainer">
+        <img src="https://th.bing.com/th/id/OIP.f1ac8LcsNjxoYHF7Lo9IVAHaEK?w=309&h=180&c=7&r=0&o=7&dpr=1.2&pid=1.7&rm=3" style="background-color: black;" ></img>
       </div>
-    </section>
-  </main>
+
+
+      <p class="trusted-by">Trusted By 800,000 clients</p>
+    </div>
+  </section>
+  <!-- --------truested-logo----- -->
+  <section>
+    <div class="trusted-logo">
+      <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/airbnb-logo.svg" alt="">
+      <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/databricks-logo.svg" alt="">
+      <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/cloudflare-logo.svg" alt="">
+      <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/scale-ai-logo.svg" alt="">
+      <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/scale-ai-logo.svg" alt="">
+      <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/grammarly-logo.svg" alt="">
+      <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/bamboohr-logo.svg" alt="">
+      <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/shutterstock-logo.svg" alt="">
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="categories">
+    <h1> Find freelancers for every type of work</h1>
+    <div class="container">
+      <div class="category-grid">
+
+        <a href="#" class="category-card">
+          <div class="cat-icon ai">✦</div>
+          <h3>AI Services</h3>
+        </a>
+        <a href="#" class="category-card">
+          <div class="cat-icon dev">&lt;/&gt;</div>
+          <h3>Development &amp; IT</h3>
+        </a>
+        <a href="#" class="category-card">
+          <div class="cat-icon design">✎</div>
+          <h3>Design &amp; Creative</h3>
+        </a>
+        <a href="#" class="category-card">
+          <div class="cat-icon sales">↗</div>
+          <h3>Sales &amp; Marketing</h3>
+        </a>
+        <a href="#" class="category-card">
+          <div class="cat-icon writing">✍</div>
+          <h3>Writing &amp; Translation</h3>
+        </a>
+        <a href="#" class="category-card">
+          <div class="cat-icon admin">☰</div>
+          <h3>Admin &amp; Support</h3>
+        </a>
+        <a href="#" class="category-card">
+          <div class="cat-icon finance">$</div>
+          <h3>Finance &amp; Accounting</h3>
+        </a>
+        <a href="#" class="category-card">
+          <div class="cat-icon legal">§</div>
+          <h3>Legal</h3>
+        </a>
+        <a href="#" class="category-card">
+          <div class="cat-icon hr">☺</div>
+          <h3>HR &amp; Training</h3>
+        </a>
+        <a href="#" class="category-card">
+          <div class="cat-icon eng">⌂</div>
+          <h3>Engineering &amp; Architecture</h3>
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <!-- ----------impression data--------- -->
+  <section>
+    <div class="impresstion">
+      <div class="quiz">
+        <p>Free AI project scoping</p>
+        <h2>Not sure where to start with AI?</h2>
+        Answer three quick questions. Get matched to the right AI project and specialist.
+      </div>
+      <div class="airsection">
+        <p>What's your top business priority?</p>
+        <div class="airbutton">
+          <button>Save time</button>
+          <button>Grow revenue</button>
+          <button>Boost loyalty</button>
+          <button>Make better decisions</button>
+          <button>Bulid something new</button>
+          <button><em>?</em> Others</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How it works</h2>
+
+      <div class="tabs">
+        <button class="tab active">For hiring</button>
+        <button class="tab">For finding work</button>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-img img-1"><video
+              src="https://acquisition-ui-assets.static-upwork.com/brontes/hiw-v2/hiw-client.mp4" autoplay muted loop
+              playsinline></video></div>
+          <h3>1. Post a job for free</h3>
+          <p>Generate a job post with AI or create your own and filter talent matches.</p>
+          <a href="#" class="link-arrow">Create a job →</a>
+        </article>
+        <article class="step">
+          <div class="step-img img-2"><img
+              src="https://acquisition-ui-assets.static-upwork.com/brontes/hp-2026/hiw-for-hiring-1-space-solutions-grd-06.jpg"
+              alt=""></div>
+          <h3>2. Get proposals and hire</h3>
+          <p>Screen, interview, or book a consult with an expert before hiring.</p>
+          <a href="#" class="link-arrow">Explore experts →</a>
+        </article>
+        <article class="step">
+          <div class="step-img img-3"> <img
+              src="https://acquisition-ui-assets.static-upwork.com/brontes/hiw-v2/for_hiring_3.png" alt=""></div>
+          <h3>3. Pay when work is done</h3>
+          <p>Release payments after approving work, by milestone or upon project completion.</p>
+          <a href="#" class="link-arrow">View pricing →</a>
+        </article>
+      </div>
+
+      <div class="pricing-insight">
+        <h3>Get insights into freelancer pricing</h3>
+        <p>We'll calculate the average cost for freelancers with the skills you need.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLANS ============ -->
+  <section class="plans">
+    <div class="container">
+      <h2 class="section-title">Choose how you want to hire</h2>
+      <p class="section-sub">Flexible options designed to fit your hiring needs</p>
+
+      <div class="plan-grid">
+        <article class="plan-card">
+          <h3>Basic</h3>
+          <p class="plan-desc">For occasional hiring and one-off projects</p>
+          <p class="plan-text">Hire skilled freelancers fast – without long-term commitments or extra overhead.</p>
+          <hr>
+          <h4>Basic includes:</h4>
+          <ul>
+            <li>Marketplace access – skilled freelancers across thousands of skills</li>
+            <li>Talent profiles – portfolios, ratings, and work history</li>
+            <li>Hiring tools – proposals and terms in one place</li>
+            <li>Project workspace – messages, files, and status in one view</li>
+            <li>Protected payments – escrow-backed pay tied to approved work</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-block">Get started for free</a>
+        </article>
+
+        <article class="plan-card popular">
+          <span class="badge">Popular</span>
+          <h3>Business Plus</h3>
+          <p class="plan-desc">For ongoing work, repeat hiring, and teams</p>
+          <p class="plan-text">Premium tools, vetted talent, and team controls for running freelance work at scale.</p>
+          <hr>
+          <h4>Everything in Basic, plus:</h4>
+          <ul>
+            <li>Curated shortlists – we surface top matches so you can hire faster</li>
+            <li>Expert-Vetted talent – access to the top 1% of Upwork freelancers</li>
+            <li>Team workspace – shared hiring with roles and permissions</li>
+            <li>Centralized billing – keep team spend in one place</li>
+            <li>Priority support – faster help to keep projects moving</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">Get started for free</a>
+        </article>
+      </div>
+
+      <p class="compare"><a href="#">Compare features across plans →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title light">Proven results on Upwork</h2>
+
+      <div class="testimonial-grid">
+        <article class="testimonial">
+          <p class="quote">"We discovered CTO-level expertise on the platform—someone who had already served as a
+            startup CTO—willing to contribute to our open-source project."</p>
+          <div class="person">
+            <div class="avatar">SB</div>
+            <div><strong>Saswata Basu</strong><span>CEO, Züs</span></div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p class="quote">"Upwork isn't just a hiring platform for us—it's a strategic partner. It's helped us fill
+            every technical gap and accelerate our delivery."</p>
+          <div class="person">
+            <div class="avatar">DW</div>
+            <div><strong>David Wrench</strong><span>Co-Founder and CEO, Datajoi</span></div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p class="quote">"I found two awesome candidates and wound up hiring an AI freelancer based in Paris. We
+            really couldn't be this far along without Upwork."</p>
+          <div class="person">
+            <div class="avatar">MS</div>
+            <div><strong>Matt See</strong><span>Co-Founder and CEO, Lighthouse</span></div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p class="quote">"Upwork is paramount to the success that we've had. We fully consider our Upwork staff part
+            of our team."</p>
+          <div class="person">
+            <div class="avatar">BG</div>
+            <div><strong>Bryan Goltzman</strong><span>CEO, Liquid Screen Design</span></div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p class="quote">"Being able to find the right people—who are heart driven yet have immense talents—has been
+            really awesome."</p>
+          <div class="person">
+            <div class="avatar">JL</div>
+            <div><strong>Jen Libby</strong><span>Founder and CEO, Promly</span></div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p class="quote">"What really builds our confidence is how we consistently find experts who deliver on highly
+            technical, complex projects."</p>
+          <div class="person">
+            <div class="avatar">GR</div>
+            <div><strong>Gabriel Richman</strong><span>Founder and CEO, Omic</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>For Clients</h4>
+        <a href="#">How to Hire</a>
+        <a href="#">Talent Marketplace</a>
+        <a href="#">Project Catalog</a>
+        <a href="#">Hire an Agency</a>
+        <a href="#">Enterprise</a>
+      </div>
+      <div>
+        <h4>For Talent</h4>
+        <a href="#">How to Find Work</a>
+        <a href="#">Direct Contracts</a>
+        <a href="#">Find Freelance Jobs</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Help &amp; Support</a>
+        <a href="#">Success Stories</a>
+        <a href="#">Upwork Reviews</a>
+        <a href="#">Blog</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Trust, Safety &amp; Security</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span class="logo small">up<span>work</span></span>
+      <p>© 2026 Upwork Clone — Built for educational purposes.</p>
+      <div class="socials">
+        <a href="#">f</a><a href="#">𝕏</a><a href="#">in</a><a href="#">▶</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
-
-
-
